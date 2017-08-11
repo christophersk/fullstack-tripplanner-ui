@@ -1,0 +1,65 @@
+.class {
+  width: "100%"; }
+
+.glyphicon {
+  padding-right: 1 rem;
+  display: inline-block; }
+
+.radius {
+  border-radius: 20px; }
+
+.category-header {
+  font-size: 1.2em;
+  font-family: roboto; }
+
+.planner-navbar {
+  background-color: #5085a5;
+  padding: .5em;
+  border-radius: 10px 10px 0px 0px; }
+
+body {
+  background-color: #f7f9fb; }
+
+.navbar {
+  background-color: #31708e; }
+
+.menu-color {
+  background-color: #31708e;
+  color: #eeeeee !important;
+  font-family: roboto;
+  font-size: 1.1em; }
+
+.day-planner {
+  background-color: #8fc1e3;
+  padding: 2rem;
+  border-radius: 0px 0px 10px 10px; }
+
+.map-box-shadow {
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2); }
+
+.day-planner-wrapper {
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 10px 10px; }
+
+.drop-down-menus {
+  background-color: #5085a5;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2); }
+
+h3 {
+  padding-top: 0;
+  margin-top: 0;
+  text-align: center; }
+
+.category-header {
+  font-family: roboto;
+  font-size: 1.1 em;
+  font-weight: normal;
+  text-shadow: 2px 0px 4px rgba(247, 249, 251, 0.6); }
+
+.active a {
+  background-color: #8fc1e3 !important; }
+
+.btn-round {
+  border-radius: 50%; }

@@ -1,0 +1,29 @@
+{
+  "name": "static-UI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "seed": "node seed.js",
+    "build:css": "node-sass -w -r assets/stylesheets -o public/stylesheets"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.4",
+    "jquery": "^3.2.1",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.11.0",
+    "nunjucks": "^3.0.1",
+    "pg": "^7.1.0",
+    "sequelize": "^4.4.3",
+    "volleyball": "^1.4.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only menu-color">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand menu-color" href="#"><span class="glyphicon glyphicon-map-marker"></span>  Trip Planner</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#" class="menu-color"><span class="glyphicon glyphicon-home"></span>  Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#" class="menu-color"><span class="glyphicon glyphicon-book"></span>  About</a></li>
+          <li><a href="#" class="menu-color"><span class="glyphicon glyphicon-envelope"></span>  Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="embed-responsive embed-responsive-4by3 radius map-box-shadow">
+        <div id="google-map" class="embed-responsive-item radius">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+
+      <div class="drop-down-menus">
+      <form>
+        <div class="form-group ">
+          <label for="hotels" class="category-header">Hotels</label>
+          <select class="form-control">
+            {% for hotel in hotels %}
+            <option>{{ hotel.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="restaurants" class="category-header">Restaurants</label>
+          <select class="form-control">
+              {% for restaurant in restaurants %}
+              <option>{{ restaurant.name }}</option>
+              {% endfor %}
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="restaurants" class="category-header">Activities</label>
+          <select class="form-control">
+              {% for activity in activities %}
+              <option>{{ activity.name }}</option>
+              {% endfor %}
+          </select>
+          </div>
+      </form>
+    </div>
+      <br/>
+      <h3>Day Planner</h3>
+      <div class="day-planner-wrapper">
+      <div class="planner-navbar">
+          <button class="btn btn-primary btn-round">1</button>
+          <button class="btn btn-primary btn-round">2</button>
+          <button class="btn btn-primary btn-round">3</button>
+          <button class="btn btn-primary btn-round">+</button>
+        </div>
+      <div class="day-planner">
+      <div class="planner-list">
+        <br/>
+        <div class="category-header">Hotels</div>
+
+        <div class="category-header">Restaurants</div>
+        <div class="category-header">Activities</div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
